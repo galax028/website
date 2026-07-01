@@ -1,0 +1,32 @@
+{
+  "db_name": "SQLite",
+  "query": "\n            SELECT\n                updated_at AS \"updated_at: DateTime<Utc>\",\n                title,\n                slug\n            FROM blog\n            ORDER BY created_at DESC LIMIT 3\n            ",
+  "describe": {
+    "columns": [
+      {
+        "name": "updated_at: DateTime<Utc>",
+        "ordinal": 0,
+        "type_info": "Text"
+      },
+      {
+        "name": "title",
+        "ordinal": 1,
+        "type_info": "Text"
+      },
+      {
+        "name": "slug",
+        "ordinal": 2,
+        "type_info": "Text"
+      }
+    ],
+    "parameters": {
+      "Right": 0
+    },
+    "nullable": [
+      false,
+      false,
+      false
+    ]
+  },
+  "hash": "1b18d4ea7f7d87663c656112da819e3ed034af9f06275c20ba07e64580e8f75e"
+}

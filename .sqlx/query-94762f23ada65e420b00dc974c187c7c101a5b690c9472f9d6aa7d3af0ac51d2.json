@@ -1,0 +1,62 @@
+{
+  "db_name": "SQLite",
+  "query": "\n            SELECT id AS \"id: Hyphenated\",\n                created_at AS \"created_at: DateTime<Utc>\",\n                updated_at AS \"updated_at: DateTime<Utc>\",\n                name,\n                description,\n                starred AS \"starred: bool\",\n                showcase,\n                repository\n            FROM project\n            ",
+  "describe": {
+    "columns": [
+      {
+        "name": "id: Hyphenated",
+        "ordinal": 0,
+        "type_info": "Text"
+      },
+      {
+        "name": "created_at: DateTime<Utc>",
+        "ordinal": 1,
+        "type_info": "Text"
+      },
+      {
+        "name": "updated_at: DateTime<Utc>",
+        "ordinal": 2,
+        "type_info": "Text"
+      },
+      {
+        "name": "name",
+        "ordinal": 3,
+        "type_info": "Text"
+      },
+      {
+        "name": "description",
+        "ordinal": 4,
+        "type_info": "Text"
+      },
+      {
+        "name": "starred: bool",
+        "ordinal": 5,
+        "type_info": "Int64"
+      },
+      {
+        "name": "showcase",
+        "ordinal": 6,
+        "type_info": "Text"
+      },
+      {
+        "name": "repository",
+        "ordinal": 7,
+        "type_info": "Text"
+      }
+    ],
+    "parameters": {
+      "Right": 0
+    },
+    "nullable": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false
+    ]
+  },
+  "hash": "94762f23ada65e420b00dc974c187c7c101a5b690c9472f9d6aa7d3af0ac51d2"
+}

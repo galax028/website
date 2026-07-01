@@ -17,7 +17,7 @@ impl Config {
     #[allow(clippy::missing_errors_doc, clippy::missing_panics_doc)]
     /// Creates a new `Config` by loading environment variables.
     pub fn new() -> Result<Config> {
-        dotenv().context("Failed to load environment variables")?;
+        dotenv().ok();
 
         let cors_origins = var("CORS_ORIGINS")
             .unwrap_or_default()
